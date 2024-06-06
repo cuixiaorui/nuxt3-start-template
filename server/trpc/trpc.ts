@@ -21,7 +21,6 @@
  * This is where the tRPC API is initialized, connecting the context and transformer.
  */
 import { initTRPC } from "@trpc/server";
-import { prisma } from "~~/server/db";
 import type { H3Event } from "h3";
 import superjson from "superjson";
 
@@ -38,11 +37,9 @@ type CreateContextOptions = Record<string, never>;
  *
  * @see https://create.t3.gg/en/usage/trpc#-servertrpccontextts
  */
- 
+
 const createInnerTRPCContext = (_opts: CreateContextOptions) => {
-  return {
-    prisma,
-  };
+  return {};
 };
 
 /**
@@ -51,7 +48,7 @@ const createInnerTRPCContext = (_opts: CreateContextOptions) => {
  *
  * @link https://trpc.io/docs/context
  */
- 
+
 export const createTRPCContext = async (_event: H3Event) => {
   return createInnerTRPCContext({});
 };

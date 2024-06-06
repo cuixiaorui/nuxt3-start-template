@@ -1,4 +1,4 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 start template 
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -48,10 +48,11 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - trpc
 - typescript
 - Tailwind CSS
-- Prisma
 - mongoDB
 - [logto](https://docs.logto.io/quick-starts/nuxt/)
 - pinia
 - vueuse
 - auto-animate
 - nuxt-image
+- nuxt-eslint
+- prettier
