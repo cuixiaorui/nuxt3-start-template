@@ -38,7 +38,7 @@ type CreateContextOptions = Record<string, never>;
  *
  * @see https://create.t3.gg/en/usage/trpc#-servertrpccontextts
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+ 
 const createInnerTRPCContext = (_opts: CreateContextOptions) => {
   return {
     prisma,
@@ -51,7 +51,7 @@ const createInnerTRPCContext = (_opts: CreateContextOptions) => {
  *
  * @link https://trpc.io/docs/context
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+ 
 export const createTRPCContext = async (_event: H3Event) => {
   return createInnerTRPCContext({});
 };

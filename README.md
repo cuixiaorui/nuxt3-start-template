@@ -50,4 +50,8 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - Tailwind CSS
 - Prisma
 - mongoDB
-- logto
+- [logto](https://docs.logto.io/quick-starts/nuxt/)
+- pinia
+- vueuse
+- auto-animate
+- nuxt-image
