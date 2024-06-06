@@ -27,6 +27,14 @@ const hello = await $client.example.hello.useQuery({ text: "from tRPC" });
     <div
       class="container flex flex-col items-center justify-center gap-12 px-4 py-16"
     >
+      <UButton
+        icon="i-heroicons-pencil-square"
+        size="sm"
+        color="primary"
+        variant="solid"
+        label="Button"
+        :trailing="false"
+      />
       <h1
         class="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]"
       >

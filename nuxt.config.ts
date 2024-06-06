@@ -16,12 +16,5 @@ export default defineNuxtConfig({
     plugins: [eslintPlugin()],
   },
 
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
-
-  modules: ["@nuxt/ui"]
+  modules: ["@nuxt/ui"],
 });

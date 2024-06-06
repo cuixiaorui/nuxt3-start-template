@@ -40,3 +40,14 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+### Technology stack
+
+- nuxt3
+- nuxt3-ui
+- trpc
+- typescript
+- Tailwind CSS
+- Prisma
+- mongoDB
+- logto
