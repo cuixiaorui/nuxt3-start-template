@@ -22,6 +22,7 @@
  */
 import { initTRPC } from "@trpc/server";
 import type { H3Event } from "h3";
+import { db } from "../db";
 import superjson from "superjson";
 
 /** Replace this with an object if you want to pass things to createContextInner */
@@ -39,7 +40,9 @@ type CreateContextOptions = Record<string, never>;
  */
 
 const createInnerTRPCContext = (_opts: CreateContextOptions) => {
-  return {};
+  return {
+    db,
+  };
 };
 
 /**

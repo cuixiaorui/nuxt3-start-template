@@ -9,7 +9,11 @@
     "postinstall": "nuxt prepare ",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "docker:start": "docker-compose up -d",
+    "docker:stop": "docker-compose stop",
+    "docker:delete": "docker-compose down",
+    "docker:down": "docker-compose down --volumes"
   },
   "dependencies": {
     "@trpc/client": "^10.45.2",
@@ -30,6 +34,7 @@
     "@types/prettier": "^3.0.0",
     "@vueuse/nuxt": "^10.10.0",
     "autoprefixer": "^10.4.19",
+    "mongoose": "^8.4.1",
     "nuxt": "^3.11.2",
     "postcss": "^8.4.38",
     "prettier": "^3.3.1",

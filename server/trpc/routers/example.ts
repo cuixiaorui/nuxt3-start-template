@@ -11,7 +11,7 @@ export const exampleRouter = createTRPCRouter({
       };
     }),
 
-  getAll: publicProcedure.query(({ ctx }) => {
-    return "get all";
+  getAll: publicProcedure.query(async ({ ctx }) => {
+    return ctx.db.User.find();
   }),
 });

@@ -1,5 +1,8 @@
 import { exampleRouter } from "./routers/example";
 import { createTRPCRouter } from "./trpc";
+import { connectDB } from "../db";
+
+connectDB();
 
 /**
  * This is the primary router for your server.

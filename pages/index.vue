@@ -18,6 +18,7 @@ useHead({
 const { $client } = useNuxtApp();
 
 const hello = await $client.example.hello.useQuery({ text: "from tRPC" });
+const all = await $client.example.getAll.useQuery();
 </script>
 
 <template>
@@ -46,9 +47,7 @@ const hello = await $client.example.hello.useQuery({ text: "from tRPC" });
           href="https://create.t3.gg/en/usage/first-steps"
           target="_blank"
         >
-          <h3 class="text-2xl font-bold">
-            First Steps →
-          </h3>
+          <h3 class="text-2xl font-bold">First Steps →</h3>
           <div class="text-lg">
             Just the basics - Everything you need to know to set up your
             database and authentication.
@@ -59,9 +58,7 @@ const hello = await $client.example.hello.useQuery({ text: "from tRPC" });
           href="https://create.t3.gg/en/introduction"
           target="_blank"
         >
-          <h3 class="text-2xl font-bold">
-            Documentation →
-          </h3>
+          <h3 class="text-2xl font-bold">Documentation →</h3>
           <div class="text-lg">
             Learn more about Create T3 App, the libraries it uses, and how to
             deploy it.
@@ -70,6 +67,10 @@ const hello = await $client.example.hello.useQuery({ text: "from tRPC" });
       </div>
       <p class="text-2xl text-white">
         {{ hello.data ? hello.data.value?.greeting : "Loading tRPC query..." }}
+      </p>
+
+      <p class="text-2xl text-white">
+        {{ all.data ? all.data.value : "Loading tRPC all query..." }}
       </p>
     </div>
   </main>
